@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+#message {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game {
+    background-color: #525252;
+    padding: 32px;
+    border-radius: 32px;
+}
+
+.grid {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+}
+
+/* grid section */
+.grid button {
+    background-color: #177e97;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: solid 0px darkgray;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* Butotn state on hover */
+.grid button:hover {
+    border: solid 2px lightgray;
+}
+
+.grid button:active {
+    background-color: #126479;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 3px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: white;
+    transform: translateY(4px);
+}
